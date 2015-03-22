@@ -13,6 +13,7 @@ The data from the original data set was divided into several files. All of them 
 - features.txt: This file had the name of all the features contained in the X_train.txt and X_test.txt.
 
 The script performs the following steps to compile the data:
+
 1. The script starts by reading the X_train.txt data. 
 2. Reads in the data from the features.txt file to name the columns in the data set. 
 3. Selects only the columns of interest, which are the features containing mean and standard deviation values, as from the instructions of the assignment. 
