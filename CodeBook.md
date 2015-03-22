@@ -13,17 +13,17 @@ The data from the original data set was divided into several files. All of them 
 - features.txt: This file had the name of all the features contained in the X_train.txt and X_test.txt.
 
 The script performs the following steps to compile the data:
-1 - The script starts by reading the X_train.txt data. 
-2 - Reads in the data from the features.txt file to name the columns in the data set. 
-3 - Selects only the columns of interest, which are the features containing mean and standard deviation values, as from the instructions of the assignment. 
-4 - Reads in the contents of the subject_train.txt file and appends it to the data frame.
-5 - Reads in the contents of the y_train.txt file and appends it to the data frame.
-6 - Reads in the contents fo the activity_labels.txt file and merges it to the data frame to provide the descriptive activity as required by the assignment
-7 - Repeats steps 1 to 6 for the test data.
-8 - Binds train and test data using rbind().
-9 - Melts the data using the columns ("subject","activityId","activityName") as key and all the other columns as measures.
-10 - Cast the data back to calculate the mean of the measures for each subject and activity.
-11 - Write the data to a file called tidy_data.txt
+1. The script starts by reading the X_train.txt data. 
+2. Reads in the data from the features.txt file to name the columns in the data set. 
+3. Selects only the columns of interest, which are the features containing mean and standard deviation values, as from the instructions of the assignment. 
+4. Reads in the contents of the subject_train.txt file and appends it to the data frame.
+5. Reads in the contents of the y_train.txt file and appends it to the data frame.
+6. Reads in the contents fo the activity_labels.txt file and merges it to the data frame to provide the descriptive activity as required by the assignment
+7. Repeats steps 1 to 6 for the test data.
+8. Binds train and test data using rbind().
+9. Melts the data using the columns ("subject","activityId","activityName") as key and all the other columns as measures.
+10. Cast the data back to calculate the mean of the measures for each subject and activity.
+11. Write the data to a file called tidy_data.txt
 
 The file produced contains 180 observations of 69 variables. The variables are:
  - subject                    : The subject id.
